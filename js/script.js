@@ -1,0 +1,1 @@
+const rangeSlider=document.getElementById("range-slider");if(rangeSlider){noUiSlider.create(rangeSlider,{start:[0,900],connect:!0,step:1,range:{min:0,max:1e3}});const e=[document.getElementById("input-min"),document.getElementById("input-max")];rangeSlider.noUiSlider.on("update",(function(n,t){e[t].value=Math.round(n[t])}))}
